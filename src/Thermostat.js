@@ -1,7 +1,7 @@
 $('input#up').click(function(){
-  $('#temperature').text('21 ℃');
+  $('#temperature').text(parseInt($('#temperature').text()) + 1);
 });
 
 $('input#down').click(function(){
-  $('#temperature').text('19 ℃');
+  $('#temperature').text(parseInt($('#temperature').text()) - 1);
 });
